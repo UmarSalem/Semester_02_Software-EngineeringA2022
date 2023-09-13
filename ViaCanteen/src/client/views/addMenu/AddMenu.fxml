@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="479.0" prefWidth="465.0" style="-fx-background-color: #f2ebd3;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.views.addMenu.AddMenuController">
+   <children>
+      <Label layoutX="63.0" layoutY="26.0" prefHeight="14.0" prefWidth="111.0" text="Add Menu">
+         <font>
+            <Font name="Elephant" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="menuNameField" layoutX="18.0" layoutY="103.0" promptText="Salmon Pasta" />
+      <TextField fx:id="IsMenuVegField" layoutX="18.0" layoutY="168.0" promptText="No" />
+      <TextField fx:id="menuQuantityField" layoutX="25.0" layoutY="248.0" prefHeight="25.0" prefWidth="59.0" promptText="3" />
+      <Button layoutX="258.0" layoutY="411.0" mnemonicParsing="false" onAction="#cancelMenu" prefHeight="25.0" prefWidth="92.0" text="Cancel" />
+      <Button layoutX="372.0" layoutY="411.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="80.0" text="Back" />
+      <Label layoutX="30.0" layoutY="81.0" text="Menu Name" />
+      <Label layoutX="15.0" layoutY="137.0" text="IsMenuVeg" />
+      <Label layoutX="31.0" layoutY="223.0" text="Quantity" />
+      <Label layoutX="269.0" layoutY="72.0" text="Choose Meny Type" />
+      <Button layoutX="14.0" layoutY="411.0" mnemonicParsing="false" onAction="#addMenu" prefHeight="25.0" prefWidth="98.0" text="Add" />
+      <Label layoutX="269.0" layoutY="137.0" text="Meny Price" />
+      <TextField fx:id="menuPriceField" layoutX="233.0" layoutY="155.0" promptText="25" />
+      <Label layoutX="276.0" layoutY="189.0" text="Ingredient" />
+      <TextField fx:id="menuIngredientField" layoutX="98.0" layoutY="248.0" prefHeight="25.0" prefWidth="356.0" promptText="Ingredient1-Ingredient2-Ingredient3-Ingredient4" />
+      <ComboBox fx:id="menuTypeChoiceBox" layoutX="240.0" layoutY="90.0" prefHeight="25.0" prefWidth="172.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="99.0" layoutY="223.0" prefHeight="17.0" prefWidth="356.0" text="Please Insert Text In This Format(Ingredient1-Ingredient2-Ingredient3" textAlignment="CENTER">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
